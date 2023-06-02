@@ -2,22 +2,27 @@ import React from "react";
 import { FiHash } from "react-icons/fi";
 import { RiFileList2Line } from "react-icons/ri";
 import { ImHome2 } from "react-icons/im";
+import { RxAvatar } from "react-icons/rx";
 import { HiOutlineBookmark } from "react-icons/hi";
 import { HiOutlineUser } from "react-icons/hi";
 import { GrNotification } from "react-icons/gr";
 import { GrMailOption } from "react-icons/gr";
 import { FaTwitter } from "react-icons/fa";
+import { Avatar } from "@mui/material";
 import { CgMoreO } from "react-icons/cg";
 import style from "./LeftSection.module.css";
 import TweetButton from "../../../Atoms/TweetButton/TweetButton";
+import { useNavigate } from "react-router-dom";
 // import LogOutPopOver from "../../Component/Left Section Log-Out Pop/LogOutPopOver";
 import { Link } from "react-router-dom";
+import Popover from '@mui/material/Popover';
 import { useSelector,useDispatch } from "react-redux";
 export default function LeftSection({className}) {
 // let matchedUserData =JSON.parse(localStorage.getItem("matchedUser"))
+const navigate = useNavigate()
 const values = useSelector(state=>state.localData)
 const {arrayData,  tweeterUserName} = values
-console.log(tweeterUserName[0].name1,"this is the user")
+// console.log(tweeterUserName[0].name1,"this is the user")
   const buttonList = [
     {
       icon: <ImHome2 className={style.icon} />,
@@ -55,6 +60,11 @@ console.log(tweeterUserName[0].name1,"this is the user")
     },
   ];
 
+
+  const handlePoplogout = ()=>{
+    navigate('/')
+  }
+
   return (
     <>
       <div className={style.left}>
@@ -71,8 +81,12 @@ console.log(tweeterUserName[0].name1,"this is the user")
         <div className={style.popover}>
        
         </div>
-               <div></div>
-        <button >{tweeterUserName[0].name1}<br/>@{tweeterUserName[0].name1}{Math.floor(Math.random()*100+1)}</button>
+               <div>
+
+
+
+               </div>
+        <button className={style.logoutBtn} onClick={handlePoplogout} ><Avatar   className={style.avatar} src={<RxAvatar/>}/><div className={style.userName}>{tweeterUserName[0].name1}<br/>@{tweeterUserName[0].name1}{tweeterUserName[0].name1==""?"":Math.floor(Math.random()*100+1)}</div></button>
       </div>
 
     </>

@@ -13,6 +13,10 @@ import Like from '../../../../Atoms/PostBottomBar/LikeCount/Like'
 import { RxAvatar } from "react-icons/rx";
 import { useDispatch,useSelector } from "react-redux";
 import { addArrayData } from "../../../../Redux/dataslice";
+import Reply from "../../../../Atoms/PostBottomBar/Reply/Reply";
+import Retweet from "../../../../Atoms/PostBottomBar/Retweet/Retweet";
+import Views from "../../../../Atoms/PostBottomBar/View/View";
+import Share from "../../../../Atoms/PostBottomBar/Share/Share";
 
 
  
@@ -64,12 +68,16 @@ function  fetchData()
               </div>
 
               <div className={style.innercontainer}>
-                <span className={style.text}>
+                {/* <span className={style.text}>
                   <h3>{data.first_name} {data.last_name}<VerifiedIcon style={{color:"#00acee"}}/></h3>
                   
                 </span>
                 <h4>{data.first_name}</h4>
-                <h4>{data.caption}</h4>
+                <h4>{data.caption}</h4> */}
+
+<h3 className={style.text}>{data.first_name} {data.last_name} <VerifiedIcon style={{color:"#00acee"}}/></h3>
+                  
+                  {data.caption}
               </div>
             </div>
 
@@ -81,7 +89,7 @@ function  fetchData()
               />
             </div>
             <div className={style.icons}>
-                  <span>
+                  {/* <span>
                     {data.likesCount}
                     <ChatBubbleOutlineIcon />
                     <FaRegComment/>
@@ -98,7 +106,22 @@ function  fetchData()
                     <PollIcon />
                   </span>
 
-                  <UploadIcon />
+                  <UploadIcon /> */}
+
+
+                 <span>
+                    <Reply/>
+                  </span>
+                  <span>
+                    <Retweet/>
+                  </span>
+                  <span>
+                   <Like/>
+                  </span>
+                  <span>
+                    <Views/>
+                  </span>
+                  <Share/>
                 </div>
           </div>
         );

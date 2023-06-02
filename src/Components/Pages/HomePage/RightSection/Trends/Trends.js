@@ -10,42 +10,42 @@ export default function Trends() {
       id: 1,
 
       inIntrseted: false,
-      upText: "SHOW",
-      midText: "#BB K VINES",
-      botText: "377k Tweets",
+      upText: "ECONOMY",
+      midText: "#INDIA'S GDP",
+      botText: "485k Tweets",
     },
     
     {
       id: 2,
       inIntrseted: false,
-      upText: "CODE",
-      midText: "#REACT",
-      botText: "377k Tweets",
+      upText: "SPORTS",
+      midText: "#CRICKET",
+      botText: "455k Tweets",
     },
    
     {
       id: 3,
 
       inIntrseted: false,
-      upText: "MOVIE",
-      midText: "#RRR",
-      botText: "377k Tweets",
+      upText: "CODING",
+      midText: "#REACT",
+      botText: "401k Tweets",
     },
     {
       id: 4,
 
       inIntrseted: false,
-      upText: "SPORTS",
-      midText: "#CRICKET",
-      botText: "377k Tweets",
+      upText: "TRENDING",
+      midText: "#PRIDE MONTH",
+      botText: "391k Tweets",
     },
     {
       id: 5,
 
       inIntrseted: false,
-      upText: "MUSIC",
-      midText: "#BTS",
-      botText: "377k Tweets",
+      upText: "TRENDING",
+      midText: "#RAMAYANA",
+      botText: "383k Tweets",
     },
     
   ];

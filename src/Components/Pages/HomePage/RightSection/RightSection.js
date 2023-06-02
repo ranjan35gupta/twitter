@@ -13,7 +13,6 @@ function RightSection() {
     <div className={styles.follow}>
       <Trends/>
       <Follow/>
-      <h1>Like</h1>
       <Footer/>
     </div>
     </div>

@@ -11,7 +11,7 @@ import style from './MiddleSectionTweet.module.css'
 import { useRef, useState } from "react";
 import tweetPosts from "../../Data/Data";
 import { useDispatch,useSelector } from "react-redux";
-import { addArrayData } from "../../Redux/dataslice";
+import { addArrayData,addUserChange } from "../../Redux/dataslice";
 
 export default function MiddleSecTweetBox(prop) {
   let data = JSON.parse(localStorage.getItem("matchedUser"))
@@ -25,7 +25,12 @@ const dispatch = useDispatch();
       //  dispatch(addArrayData(tweetPosts))
        const values = useSelector(state=>state.localData)
        const {arrayData,  tweeterUserName} = values
-       console.log(tweeterUserName[0].name1,"this is the user")
+      
+      // localStorage.getItem(UserName)
+    
+
+       
+      //  console.log(tweeterUserName[0].name1,"this is the user")
 
   function handleTweet(e) {
     setTweet(e.target.value);

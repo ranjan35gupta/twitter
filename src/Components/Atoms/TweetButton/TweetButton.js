@@ -29,7 +29,6 @@ export default function TweetButton() {
       PaperProps={{
         style: {
           borderRadius: 20,
-      
         },
       }}
         open={open}

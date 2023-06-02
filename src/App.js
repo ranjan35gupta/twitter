@@ -1,26 +1,4 @@
-// import './App.css';
-// import {Routes, Route} from 'react-router-dom';
-// import SignUp from './Components/Pages/SignupPage/SignupPage';
-// import LoginPage from './Components/Pages/LoginPage/LoginPage';
-// import HomePage from './Components/Pages/HomePage/HomePage';
-// import { Provider } from 'react-redux';
-// import store from './Components/Redux/store';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Provider store = {store}>
-//        <Routes>
-//        <Route path='/' element={<LoginPage/>}/>
-//         <Route path='/signup' element={<SignUp/>}/>
-//         <Route path='/home' element={<HomePage/>}/>
-//        </Routes>
-//        </Provider>
-//     </div>
-//   );
-// }
-
-// export default App;
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import SignUp from './Components/Pages/SignupPage/SignupPage';
@@ -52,12 +30,7 @@ function App() {
               <HomePage />
             </PrivateRouting>
           }
-        />
-
-
-    
-        
-       </Routes>
+        /></Routes>
        
     </div>
   );

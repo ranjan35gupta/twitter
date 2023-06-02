@@ -13,7 +13,7 @@ const dataSlice = createSlice({
         day:"",
         month:"",
         year:"",
-        tweeterUserName:""
+        tweeterUserName:[{name1:""}]
 
         
     },

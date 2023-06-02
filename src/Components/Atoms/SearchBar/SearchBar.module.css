@@ -1,28 +1,25 @@
 .searchInput{
     height: 2.5rem;
-    width: 17rem;
+    width: 40rem;
     padding-left: 2rem;
     padding-right: 3rem;
     border-radius: 20rem;
     font-size: 1.1rem;
     outline: none;
     border:none;
-    margin-left: 55rem;
+    margin-top: 0.6rem;
     background-color:  rgba(214, 214, 214, 0.4);
-    border: 1px solid blue;
 }
      
 .icon{
     display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    position: relative;    
+    position: relative;   
+    width: 22.7rem; 
 }
 
 .icon2{
     font-size: 1.2rem;
     position: absolute;
-    top:0.7rem;
+    top: 1.3rem;
     left:0.7rem;
-    margin-left: 55rem;
 }

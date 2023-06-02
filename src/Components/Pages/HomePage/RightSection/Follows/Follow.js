@@ -7,37 +7,37 @@ const userList = [
   {
     id: 1,
     tag: <i className="far fa-solid fa-badge-check"></i>,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Dz0hVXb8Bc7IM6SpzZkEf6VfFsriOu9oPg&usqp=CAU",
-    text: "Sky",
-    text2: "sky@gmail.com",
+    src: "https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png",
+    text: "MS Dhoni", 
+    text2: "msdhoni@gmail.com",
   },
   {
     id: 2,
     tag: <i className="fa fa-solid fa-badge-check"></i>,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_NQ6CH3GSZZziyy9UcvVGlhxP8XSptflRwQ&usqp=CAU",
-    text: "Malvika",
-    text2: "malvika@gmail.com",
+    src: "https://upload.wikimedia.org/wikipedia/commons/7/74/Varun_Dhawan_promoting_Badrinath_Ki_Dulhania.jpg",
+    text: "Varun Dhawan",
+    text2: "varun@gmail.com",
   },
   {
     id: 3,
     tag: <i className="fa fa-solid fa-badge-check"></i>,
-    src: "https://pbs.twimg.com/profile_images/1565187838303383553/GhjYyIsG_400x400.jpg",
-    text: "Akshay",
+    src: "https://img.mensxp.com/media/content/2022/Nov/Headerthumb_akshay-kumar_636f74d767616.jpeg",
+    text: "Akshay Kumar",
     text2: "akshay@gmail.com",
   },
   {
     id: 4,
     tag: <i class="fa fa-solid fa-badge-check"></i>,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjj_oz7crwHtUQj0jJuvLq-ILk5oikP_3FFL-mDJqk&s",
-    text: "mahi",
+    src: "https://static.toiimg.com/photo/msid-98229360/98229360.jpg",
+    text: "Virat Kohli",
     text2: "virat@gmail.com",
   },
   {
     id: 5,
     tag: <i class="fa fa-solid fa-badge-check"></i>,
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjj_oz7crwHtUQj0jJuvLq-ILk5oikP_3FFL-mDJqk&s",
-    text: "virat",
-    text2: "virat@gmail.com",
+    src: "https://m.media-amazon.com/images/M/MV5BNGM5YmYwNjUtNzQyYS00OGY0LTljZDAtMDNiMjhiOTFiMzRiXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+    text: "Anushka Sharma",
+    text2: "anushka@gmail.com",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function Follow() {
     setShowAll(prevState => !prevState);
   }
 
-  const displayedUsers = showAll ? users : users.slice(0, 3);
+  const displayedUsers = showAll ? users : users.slice(0, 2);
 
   return (
     <>

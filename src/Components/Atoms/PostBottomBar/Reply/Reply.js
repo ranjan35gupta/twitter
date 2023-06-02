@@ -1,18 +1,17 @@
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import {FaRegComment} from 'react-icons/fa';
 import React, { useState } from "react";
 import style from './Reply.module.css';
 
-const Like = () => {
-  const [likeCount, setLikeCount] = useState(123);
+const Reply = () => {
+  const [replyCount, setReplyCount] = useState(104);
   const [activeBtn, setActiveBtn] = useState(false);
 
-  const handleLikeClick = () => {
+  const handleClick = () => {
     setActiveBtn(!activeBtn);
     if (activeBtn) {
-      setLikeCount(likeCount - 1);
+      setReplyCount(replyCount - 1);
     } else {
-      setLikeCount(likeCount + 1);
+      setReplyCount(replyCount + 1);
     }
   };
 
@@ -20,20 +19,22 @@ const Like = () => {
     <>
       <div>
         <button
-          id={style.likebtn}
-          onClick={handleLikeClick}
+          id={style.replybtn}
+          onClick={handleClick}
           className={activeBtn ? style.active : ''}
         >
           {activeBtn ? (
-            <FavoriteIcon style = {{color:"red"}} />
+            <FaRegComment style = {{color:"#008ac1"}} />
           ) : (
-            <FavoriteBorderIcon />
+            <FaRegComment/>
           )}
-          {likeCount}
+          <span style={{fontSize:"0.8rem"}}>
+          {replyCount}
+          </span>
         </button>
       </div>
     </>
   );
 };
 
-export default Like;
+export default Reply;

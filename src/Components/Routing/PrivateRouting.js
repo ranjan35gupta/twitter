@@ -3,10 +3,12 @@ const PrivateRouting = ({ children }) => {
   //     <Home />
   const isAuth = JSON.parse(localStorage.getItem("isAuth"));
 
-  if (!isAuth) {
+  if (isAuth) {
     // true
     return <Navigate to="/" />;
   }
+   
+
   return children;
 };
 
