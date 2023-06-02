@@ -1,0 +1,19 @@
+.wrapper{
+    border: 2px solid red;
+    display: flex;
+}
+.main{
+    flex: 1;
+    margin-left: 1.8rem;
+    align-items: flex-end;
+    /* width: 20rem; */
+    
+    /* margin-top: 0.3rem; */
+    /* margin-right: -15rem; */
+    border: 2px solid blue;
+   }
+   
+   .follow{
+       position: sticky;
+       top:-30rem
+   }
